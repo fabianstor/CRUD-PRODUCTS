@@ -1,4 +1,4 @@
-import './MainComponent.css'
+import './mainComponent.css'
 import FormProducts from '../formProducts/FormProducts'
 import TableComponent from '../tableComponent/TableComponent'
 import { useState } from 'react'
