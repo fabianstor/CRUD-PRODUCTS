@@ -1,0 +1,45 @@
+.main-edit-products{
+    background-color: #8638A7;
+    width: 30%;
+    height: 100vh;
+    animation: moveRight 1s normal;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@keyframes moveRight  {
+    from {
+        transform: translateX(-200px);
+    }
+    to {
+        transform: translateX(0px);
+    }
+}
+.input-plu::placeholder {
+    color: white;
+}
+.container-edit-form {
+    width: 100%;
+}
+.form-edit-products {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    width: 100%;
+}
+.button-edit-products {
+    background-color: white;
+    border: none;
+    border-radius: 5px;
+    width: 100px;
+    height: 30px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #757575;
+}
+.button-edit-products:hover {
+    background-color:   #f8f7fc;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    transition: 0.3s;
+    cursor: pointer;
+}

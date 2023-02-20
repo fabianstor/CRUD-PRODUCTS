@@ -1,0 +1,43 @@
+.table-products {
+    height: 50px;
+    width: 1000px;
+}
+.tr-products-even {
+    background-color: #6356d4;
+}
+.tr-products-odd td {
+    color: black;
+}
+tbody {
+    overflow-y: auto;
+}
+td {
+    text-align: center;
+    color: white;
+}
+@media (max-width: 560px) {
+    .table-products {
+        width: 100%;
+    }
+}
+.container-btn-img {
+    display: flex;
+    justify-content: space-evenly;
+}
+.btn-img {
+    border: none;
+    border-radius: 8px;
+    background-color: #6356d4;
+}
+.btn-img-white {
+    border: none;
+    border-radius: 8px;
+    background-color: white;
+}
+.img {
+    width: 20px;
+    height: 20px;
+}
+.img:focus {
+    outline-style: none;
+}

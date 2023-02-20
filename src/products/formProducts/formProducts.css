@@ -1,10 +1,19 @@
 .main-products{
-    background-color: #eeeeeecc;
+    background-color: #6356d4;
     width: 30%;
     height: 100vh;
     display: flex;
+    animation: opacity 1s normal;
     justify-content: center;
     align-items: center;
+}
+@keyframes opacity {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
 .container-form {
     width: 100%;
@@ -41,4 +50,48 @@ input:focus {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     transition: 0.3s;
     cursor: pointer;
+}
+@media (max-width: 1030px) {
+    input {
+        width: 250px;
+    }
+    .form-products {
+        width: 400px;
+    }
+    .container-form {
+        display: flex;
+    }
+}
+@media (max-width: 920px) {
+    input {
+        width: 230px;
+    }
+}
+@media (max-width: 830px) {
+    input {
+        width: auto;
+    }
+    .form-products {
+        margin-left: 110px;
+        width: 20px;
+    }
+    @media (max-width: 720px) {
+        input {
+            width: auto;
+        }
+        .form-products {
+            margin-left: 95px;
+            width: 20px;
+        }
+    }
+}
+@media (max-width: 640px) {
+    .main-products {
+        background-color: white;
+        width: 0px;
+    }
+    .container-form {
+        display: none;
+    }
+
 }
