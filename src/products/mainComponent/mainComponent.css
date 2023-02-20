@@ -1,0 +1,25 @@
+body {
+    margin: 0;
+}
+.main-table {
+    display: flex;
+}
+.container-table {
+    width: 70%;
+    height: 100vh;
+}
+.sub-container-table {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    max-height: 700px;
+    overflow-y: auto;
+}
+@media (max-width: 650px) {
+    .main-table {
+        width: 100%;
+    }
+    .container-table {
+        width: 625px;
+    }
+}

@@ -1,11 +1,11 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import CreateProducts from "./products/tableProducts/CreateProducts";
+import MainComponent from "./products/mainComponent/MainComponent";
 function App() {
 
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<CreateProducts />}>
+        <Route path="/" element={<MainComponent />}>
         </Route>
       </Routes>
    </BrowserRouter>
