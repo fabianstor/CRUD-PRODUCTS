@@ -13,6 +13,8 @@ export interface IProps {
     edit: boolean
     setEdit: Dispatch<SetStateAction<boolean>>
     productEdit: IProduct
+    create: boolean
+    setCreate: Dispatch<SetStateAction<boolean>>
 }
 export interface IPropsTable {
     products: IProduct[]
@@ -25,4 +27,5 @@ export interface IPropsEditProduct {
     products: IProduct[]
     productEdit: IProduct
     setProducts: Dispatch<SetStateAction<IProduct[]>>
+    setEdit:Dispatch<SetStateAction<boolean>>
 }

@@ -43,3 +43,8 @@
     transition: 0.3s;
     cursor: pointer;
 }
+@media (max-width: 440px) {
+    .main-edit-products {
+        width: 100%;
+    }
+}

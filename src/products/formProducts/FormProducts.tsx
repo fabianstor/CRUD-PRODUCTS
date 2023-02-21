@@ -1,8 +1,8 @@
-import { useEffect, useState } from 'react'
+import { useState } from 'react'
 import { IProduct, IProps } from '../../interface/products.interface'
 import './formProducts.css'
 import EditoFormProducts from '../editFormProducts/editFormProducts'
-function FormProducts({setProducts, products, edit, setEdit, productEdit}: IProps) {
+function FormProducts({setProducts, products, edit, productEdit, setCreate, create, setEdit}: IProps) {
   
   const [product, setProduct] = useState({} as IProduct)
   const [id, setId] = useState(1)
@@ -33,25 +33,22 @@ function FormProducts({setProducts, products, edit, setEdit, productEdit}: IProp
   }
 
   const createProduct = (event: React.ChangeEvent<HTMLInputElement>) => {
-    try {
       if(validateExistProduct()){
           setProducts((prev)=>{
             idIncrement()
             return [...prev,product]
           })
+          setCreate(false)
       } else {
         alert("El producto ya se encuentra registrado")
       }
       event.preventDefault()
-    } catch (error) {
-      console.log('error', error)
-    }
   }
 
   return (
-    edit ? <EditoFormProducts products = {products} setProducts = {setProducts} productEdit = {productEdit}/> :
-    <div className='main-products'>
-      <div className='container-form'>
+    edit ? <EditoFormProducts products = {products} setProducts = {setProducts} productEdit = {productEdit} setEdit = {setEdit} /> :
+    <div className={create ? 'main-products-none' : 'main-products'}>
+      <div className={create ? 'container-form-none' : 'container-form'}>
         <form className='form-products' onSubmit={(e: any) => createProduct(e)}>
           <input placeholder='PLU' name='PLU' onChange={handle} required></input>
           <input placeholder='DESCRIPCION' name='DESCRIPTION' onChange={handle} required></input>

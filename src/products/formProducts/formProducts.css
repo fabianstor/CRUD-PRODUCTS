@@ -95,3 +95,19 @@ input:focus {
     }
 
 }
+@media (max-width: 450px) {
+    .main-products-none {
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        background-color: #6356d4;
+        width: 100%;
+        height: 100vh;
+    }
+    .container-form-none {
+        display: flex;
+        height: 400px;
+        margin-left: 115px;
+        margin-top: 30px;
+    }
+}

@@ -1,7 +1,7 @@
 import { useState } from "react"
 import { IProduct, IPropsEditProduct } from "../../interface/products.interface"
 import './editFormProducts.css'
-function EditoFormProducts({products, setProducts, productEdit}: IPropsEditProduct) {
+function EditoFormProducts({products, setProducts, productEdit, setEdit}: IPropsEditProduct) {
   const [product, setProduct] = useState({} as IProduct)
 
 
@@ -20,6 +20,7 @@ function EditoFormProducts({products, setProducts, productEdit}: IPropsEditProdu
       const updatedProduct = { ...arrayProduct[index], ...product }
       arrayProduct[index] = updatedProduct
       setProducts(arrayProduct)
+      setEdit(false)
     }
   }
 
