@@ -32,7 +32,7 @@ body {
 .sub-container-table-none {
     display: none;
 }
-@media (max-width: 4400px) {
+@media (max-width: 440px) {
     .main-table {
         width: 100%;
     }
