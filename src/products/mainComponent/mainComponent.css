@@ -18,7 +18,7 @@ body {
     max-height: 700px;
     overflow-y: auto;
 }
-@media (max-width: 650px) {
+@media (max-width: 660px) {
     .main-table {
         width: 100%;
     }
