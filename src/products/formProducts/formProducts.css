@@ -98,7 +98,7 @@ input:focus {
 @media (max-width: 450px) {
     .main-products-none {
         display: flex;
-        justify-content: start;
+        justify-content: center;
         align-items: center;
         background-color: #6356d4;
         width: 100%;
@@ -106,8 +106,8 @@ input:focus {
     }
     .container-form-none {
         display: flex;
+        align-items: center;
         height: 400px;
-        margin-left: 115px;
-        margin-top: 30px;
+        width: 200px;
     }
 }
